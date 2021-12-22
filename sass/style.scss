@@ -1,0 +1,105 @@
+@import url(normalize.css);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,500,700,300);
+@import "_variables.scss";
+@import "_navbar.scss";
+@import "_main-intro.scss";
+@import "_footer.scss";
+
+html {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(108.07deg, #54CCF2 5.97%, #855BFF 68.9%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+    height: 100%;
+    min-width: 280px;
+    line-height: 1.2;
+
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1160px;
+    padding: 0 25px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.text-shadow {
+    text-shadow: 0 4px 15px rgba(#fff, .5);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.btn {
+    display: inline-block;
+    min-width: 210px;
+    min-height: 54px;
+    padding: 17px 17px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    overflow-wrap: break-word;
+}
+
+.btn-violet {
+    background-color: $color-violet;
+    transition: all .3s ease;
+    box-shadow: 0 0 15px #B52FB8;
+
+    &:hover {
+        background: darken($color: $color-violet, $amount: 2%);
+    }
+
+    &:active {
+        background: darken($color: $color-violet, $amount: 10%);
+    }
+}
+
+@media screen and (max-height: 560px) {
+    html {
+        min-height: 150vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .btn {
+        min-width: 150px;
+    }
+}

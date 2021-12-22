@@ -1,0 +1,23 @@
+.footer {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(343.11deg, #002959 27.49%, #3A2575 70.46%);
+    padding: 20px 0;
+    margin-top: 100px;
+    flex: 0 0 auto;
+}
+
+.footer__content {
+    display: flex;
+    margin: auto 0;
+}
+
+.discord-ico {
+    display: inline-block;
+    margin: auto;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
